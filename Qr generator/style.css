@@ -1,0 +1,171 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    background-color: #405D72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contaner{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 40%;
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+}
+p{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+input{
+    border: none;
+    height: 30px;
+    width: 80%;
+    margin-left: 30px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+button{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 30px;
+    height: 30px;
+    background-color:#0F67B1 ;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#photo{
+    margin-left: 30px;
+    width: 20%;
+    height: auto;
+    margin-top: 10px;
+}
+.container .img {
+    height: auto; /* Reveal the image container when QR code is generated */
+/* }
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    input, button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    input, button {
+        font-size: 0.8em;
+    }
+} */ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    background-color: #405D72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease-in-out;
+}
+
+.container p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+input {
+    border: none;
+    height: 40px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #0F67B1;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 0; /* Initially hidden */
+    transition: height 0.3s ease-in-out;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container.qr-generated .img {
+    height: auto; /* Reveal the image container when QR code is generated */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    input, button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    input, button {
+        font-size: 0.8em;
+    }
+}
